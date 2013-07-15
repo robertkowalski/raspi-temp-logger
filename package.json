@@ -1,0 +1,33 @@
+{
+  "name": "raspi-temp-logger",
+  "version": "0.1.0",
+  "description": "Get the current temperature with a Raspberry Pi, log it to a csv-file",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "dependencies": {
+    "log-csv-stream": "~0.1.0",
+    "temperature-stream": "~1.1.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.12.0",
+    "rimraf": "2.1.4",
+    "mkdirp": "~0.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:robertkowalski/raspi-temp-logger.git"
+  },
+  "author": "Robert Kowalski <rok@kowalski.gd>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/robertkowalski/raspi-temp-logger/issues"
+  },
+  "keywords": [
+    "raspi",
+    "raspberry",
+    "temperature",
+    "weather"
+  ]
+}
