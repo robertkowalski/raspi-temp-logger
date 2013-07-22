@@ -8,7 +8,14 @@ var csv = require('log-csv-stream')
 var env = process.env
 
 var logFile = (env.TEMPLOGPATH || '/data/')
-      + new Date().getFullYear() + '_' + 'temperature.csv'
+      + new Date().getFullYear() + '-' + getMonth() + '_' + 'temperature.csv'
+
+function getMonth () {
+  var d = new Date().getMonth()
+  if (d < 10)
+    d = '0' + d
+  return d
+}
 
 if (require.main == module)
   logger(function () {})
