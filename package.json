@@ -1,6 +1,6 @@
 {
   "name": "raspi-temp-logger",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Get the current temperature with a Raspberry Pi, log it to a csv-file",
   "main": "index.js",
   "scripts": {
